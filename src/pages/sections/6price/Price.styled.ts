@@ -44,6 +44,6 @@ export const Card = styled.div`
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 16px;
   }
 `;

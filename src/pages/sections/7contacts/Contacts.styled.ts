@@ -25,6 +25,16 @@ export const ContactContent = styled.div`
     text-align: center;
   }
 
+  p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  h6 {
+    margin-top: 30px;
+    text-align: end;
+  }
+
   form {
     display: flex;
     flex-direction: column;
