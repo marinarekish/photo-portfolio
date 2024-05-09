@@ -13,18 +13,22 @@ export const Categories = styled.div`
   justify-content: center;
   column-gap: 5px;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto 10px auto;
 `;
+
+export const CategoryDiv = styled.div``;
 
 export const CategoryButton = styled.label`
   color: #bdae82;
   font-size: 20px;
   line-height: 40px;
+
+  padding: 10px 40px;
+  border: 1px solid #bdae82;
+
   text-align: center;
 
-  padding: 10px auto;
-  width: 220px;
-  border: 1px solid #bdae82;
+  cursor: pointer;
 
   &:hover {
     color: #e1d4c9;
@@ -42,8 +46,8 @@ export const Input = styled.input`
   width: 1px;
 
   &:checked + ${CategoryButton} {
-    background: #403f3d;
-    color: #c1b6ad;
+    color: #e1d4c9;
+    background: #bdae82;
   }
 `;
 
@@ -54,6 +58,7 @@ export const Gallery = styled.div`
   align-items: center;
   gap: 20px;
   margin: 0 auto;
+  margin-bottom: 60px;
   padding: 30px;
 `;
 
@@ -65,5 +70,6 @@ export const ImageDiv = styled.div`
 
 export const Photo = styled.img`
   width: 100%;
+  height: 100%;
   object-fit: cover;
 `;

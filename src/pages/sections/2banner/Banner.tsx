@@ -1,14 +1,13 @@
-import { BannerButton, BannerContainer, BannerHeader, BannerText } from "./Banner.styled";
+import { BannerContainer } from "./Banner.styled";
 
 export function Banner() {
   return (
-    <BannerContainer>
-      <BannerHeader>Alex Rise</BannerHeader>
-      <BannerText>
-        Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa
-        Rise
-      </BannerText>
-      <BannerButton>Hire me</BannerButton>
+    <BannerContainer id="banner">
+      <h1>Alice Rekish</h1>
+      <p>Save sincere emotions, romantic feelings and happy moments of life together</p>
+      <a href="#contact">
+        <button>Contact me</button>
+      </a>
     </BannerContainer>
   );
 }

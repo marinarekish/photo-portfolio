@@ -1,19 +1,22 @@
+import { VideoContainer, VideoDiv } from "./Video.styled";
 import YouTube from "react-youtube";
-import { VideoContainer } from "./Video.styled";
 
 export function Video() {
   const opts = {
-    height: "670",
-    width: "1200",
+    height: "340",
+    width: "600",
     // playerVars: {
     //   autoplay: 1,
     // },
   };
 
   return (
-    <VideoContainer>
+    <VideoContainer id="video">
       <h2>Video</h2>
-      <YouTube videoId="dSNzx3pVWLg" opts={opts} />
+      <VideoDiv>
+        <YouTube videoId="kNyV3BeNdqc" opts={opts}></YouTube>
+        <YouTube videoId="6k4yjCqiSP8" opts={opts}></YouTube>
+      </VideoDiv>
     </VideoContainer>
   );
 }

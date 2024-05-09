@@ -1,4 +1,4 @@
-import { PriceButton, Card, Prices } from "./Price.styled";
+import { Card, Prices } from "./Price.styled";
 import { prices } from "./priceData";
 
 export function PriceCard() {
@@ -13,7 +13,9 @@ export function PriceCard() {
               <li key={detail}>{detail}</li>
             ))}
           </ul>
-          <PriceButton>Order shooting</PriceButton>
+          <a href="#contact">
+            <button>Order shooting</button>
+          </a>
         </Card>
       ))}
     </Prices>

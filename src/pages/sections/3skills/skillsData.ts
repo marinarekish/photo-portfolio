@@ -1,7 +1,7 @@
 import digitalPhoto from "/img/icons/digitalPhoto.svg";
 import videoMaking from "/img/icons/videoMaking.svg";
 import retouch from "/img/icons/retouch.svg";
-import audio from "/img/icons/audio.svg";
+// import audio from "/img/icons/audio.svg";
 
 export const skills = [
   {
@@ -19,9 +19,9 @@ export const skills = [
     title: "Retouch",
     description: "I strive to make photography surpass reality",
   },
-  {
-    icon: audio,
-    title: "Audio",
-    description: "Professional sounds recording for video, advertising, portfolio",
-  },
+  // {
+  //   icon: audio,
+  //   title: "Audio",
+  //   description: "Professional sounds recording for video, advertising, portfolio",
+  // },
 ];

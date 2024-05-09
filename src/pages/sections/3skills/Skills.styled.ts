@@ -5,6 +5,7 @@ export const SkillsContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 60px;
   padding: 0 20px;
 `;
 
@@ -26,7 +27,7 @@ export const SkillCard = styled.div`
   padding: 15px;
 
   h3 {
-    font-size: 22px;
+    font-size: 24px;
     margin: 0;
   }
 

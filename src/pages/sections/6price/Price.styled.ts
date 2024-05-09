@@ -5,14 +5,17 @@ export const PriceContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 60px;
 `;
 
 export const Prices = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 25px;
-  margin: 0 auto;
+  gap: 15px;
+  margin: 40px auto 0 auto;
   /* padding: 0 60px; */
 `;
 
@@ -30,7 +33,7 @@ export const Card = styled.div`
   }
 
   p {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 40px;
     color: #bdae82;
   }
@@ -41,22 +44,6 @@ export const Card = styled.div`
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
-  }
-`;
-
-export const PriceButton = styled.button`
-  max-width: 220px;
-  margin-top: 40px;
-  padding: 8px 30px;
-  background-color: #bdae82;
-  border: none;
-  cursor: pointer;
-
-  font-size: 20px;
-  line-height: 40px;
-  color: #242420;
-
-  &:hover {
-    color: #ffffff;
+    font-size: 18px;
   }
 `;

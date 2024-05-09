@@ -1,41 +1,41 @@
 export enum PortfolioItem {
-  WINTER = "winter",
-  SPRING = "spring",
-  SUMMER = "summer",
-  AUTUMN = "autumn",
+  ARCHITECTURE = "architecture",
+  DRONE = "drone",
+  NATURE = "nature",
+  PORTRAIT = "portrait",
 }
 
 export const portfolioData = {
-  [PortfolioItem.WINTER]: [
-    "/img/images/winter/1.jpg",
-    "/img/images/winter/2.jpg",
-    "/img/images/winter/3.jpg",
-    "/img/images/winter/4.jpg",
-    "/img/images/winter/5.jpg",
-    "/img/images/winter/6.jpg",
+  [PortfolioItem.ARCHITECTURE]: [
+    "/img/images/architecture/1.jpg",
+    "/img/images/architecture/2.jpg",
+    "/img/images/architecture/3.jpg",
+    "/img/images/architecture/4.jpg",
+    "/img/images/architecture/5.jpg",
+    "/img/images/architecture/6.jpg",
   ],
-  [PortfolioItem.SPRING]: [
-    "/img/images/spring/1.jpg",
-    "/img/images/spring/2.jpg",
-    "/img/images/spring/3.jpg",
-    "/img/images/spring/4.jpg",
-    "/img/images/spring/5.jpg",
-    "/img/images/spring/6.jpg",
+  [PortfolioItem.DRONE]: [
+    "/img/images/drone/1.jpg",
+    "/img/images/drone/2.jpg",
+    "/img/images/drone/3.jpg",
+    "/img/images/drone/4.jpg",
+    "/img/images/drone/5.jpg",
+    "/img/images/drone/6.jpg",
   ],
-  [PortfolioItem.SUMMER]: [
-    "/img/images/summer/1.jpg",
-    "/img/images/summer/2.jpg",
-    "/img/images/summer/3.jpg",
-    "/img/images/summer/4.jpg",
-    "/img/images/summer/5.jpg",
-    "/img/images/summer/6.jpg",
+  [PortfolioItem.NATURE]: [
+    "/img/images/nature/1.jpg",
+    "/img/images/nature/2.jpg",
+    "/img/images/nature/3.jpg",
+    "/img/images/nature/4.jpg",
+    "/img/images/nature/5.jpg",
+    "/img/images/nature/6.jpg",
   ],
-  [PortfolioItem.AUTUMN]: [
-    "/img/images/autumn/1.jpg",
-    "/img/images/autumn/2.jpg",
-    "/img/images/autumn/3.jpg",
-    "/img/images/autumn/4.jpg",
-    "/img/images/autumn/5.jpg",
-    "/img/images/autumn/6.jpg",
+  [PortfolioItem.PORTRAIT]: [
+    "/img/images/portrait/1.jpg",
+    "/img/images/portrait/2.jpg",
+    "/img/images/portrait/3.jpg",
+    "/img/images/portrait/4.jpg",
+    "/img/images/portrait/5.jpg",
+    "/img/images/portrait/6.png",
   ],
 };

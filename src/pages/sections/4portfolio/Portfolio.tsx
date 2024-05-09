@@ -3,21 +3,21 @@ import { Categories, CategoryButton, Gallery, Photo, ImageDiv, Input, PortfolioC
 import { PortfolioItem, portfolioData } from "./portfolioData";
 
 export function Portfolio() {
-  const [activeItem, setActiveItem] = useState(PortfolioItem.WINTER);
+  const [activeItem, setActiveItem] = useState(PortfolioItem.ARCHITECTURE);
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setActiveItem(event.target.value as PortfolioItem);
   }
 
   return (
-    <PortfolioContainer>
+    <PortfolioContainer id="portfolio">
       <h2>Portfolio</h2>
       <Categories>
         {Object.values(PortfolioItem).map((item) => (
-          <CategoryButton key={item} htmlFor={item}>
-            {item}
-            <Input type="radio" name="category" onChange={handleChange} value={item}></Input>
-          </CategoryButton>
+          <div key={item}>
+            <Input type="radio" id={item} name="category" onChange={handleChange} value={item}></Input>
+            <CategoryButton htmlFor={item}>{item}</CategoryButton>
+          </div>
         ))}
       </Categories>
       <Gallery>

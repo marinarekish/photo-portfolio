@@ -13,6 +13,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -59,6 +61,23 @@ h2::after {
   position: absolute;
   top: 50%;
   right: calc(50% - (275px + 120px));
+}
+
+button {
+  /* width: 220px; */
+  margin-top: 20px;
+  padding: 8px 40px;
+  background-color: #bdae82;
+  border: none;
+  cursor: pointer;
+
+  font-size: 20px;
+  line-height: 40px;
+  color: #242420;
+
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 /* 

@@ -1,43 +1,57 @@
-import { MainMenu, SideNavContainer } from "./NavBar.styled";
+import { Burger, CloseButton, MainMenu, SideNavContainer } from "./NavBar.styled";
 import { useState } from "react";
 
 export function NavMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  function openSideMenu() {
+    setIsOpen(true);
+  }
+
+  function closeSideMenu() {
+    setIsOpen(false);
+  }
 
   return (
     <>
       {/* full screen menu */}
       <MainMenu>
-        <a href="/">Skills</a>
-        <a href="/">Portfolio</a>
-        <a href="/">Video</a>
-        <a href="/">Price</a>
-        <a href="/">Contact</a>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#price">Price</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </MainMenu>
 
+      <Burger onClick={openSideMenu} />
+
       {/* small screen menu */}
-      <SideNavContainer>
-        <button>X</button>
-        <a href="/" onClick={toggleNavbar}>
-          Skills
-        </a>
-        <a href="/" onClick={toggleNavbar}>
-          Portfolio
-        </a>
-        <a href="/" onClick={toggleNavbar}>
-          Video
-        </a>
-        <a href="/" onClick={toggleNavbar}>
-          Price
-        </a>
-        <a href="/" onClick={toggleNavbar}>
-          Contact
-        </a>
-      </SideNavContainer>
+      {isOpen && (
+        <SideNavContainer>
+          <CloseButton onClick={closeSideMenu}>X</CloseButton>
+          <ul>
+            <a href="#skills" onClick={closeSideMenu}>
+              Skills
+            </a>
+            <a href="#portfolio" onClick={closeSideMenu}>
+              Portfolio
+            </a>
+            <a href="#price" onClick={closeSideMenu}>
+              Price
+            </a>
+            <a href="#contact" onClick={closeSideMenu}>
+              Contact
+            </a>
+          </ul>
+        </SideNavContainer>
+      )}
     </>
   );
 }

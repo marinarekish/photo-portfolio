@@ -3,7 +3,7 @@ import { SkillsContainer, SkillsList } from "./Skills.styled";
 
 export function Skills() {
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       <h2>Skills</h2>
       <SkillsList>
         <Skill />

@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
-import { Logo, NavContainer } from "./NavBar.styled";
+import { Logo, LogoNav, NavContainer } from "./NavBar.styled";
 import logo from "/img/icons/logo.svg";
 import { NavMenu } from "./NavMenu";
 
 export function NavBar() {
   return (
     <NavContainer>
-      <Link to="/">
+      <LogoNav href="#banner">
         <Logo src={logo} />
-      </Link>
+        <h4>Alice Rekish</h4>
+      </LogoNav>
       <NavMenu />
     </NavContainer>
   );
