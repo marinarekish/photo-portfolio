@@ -5,6 +5,7 @@ export function Skills() {
   return (
     <SkillsContainer id="skills">
       <h2>Skills</h2>
+      <hr />
       <SkillsList>
         <Skill />
       </SkillsList>

@@ -7,7 +7,7 @@ export const VideoContainer = styled.section`
   align-items: center;
   width: 100%;
 
-  margin: 0 auto 60px auto;
+  margin-bottom: 60px;
 `;
 
 export const VideoDiv = styled.div`
@@ -19,4 +19,12 @@ export const VideoDiv = styled.div`
   gap: 10px;
 
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    width: 700px;
+  }
+
+  @media (max-width: 386px) {
+    width: 350px;
+  }
 `;

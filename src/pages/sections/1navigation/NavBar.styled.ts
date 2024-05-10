@@ -13,6 +13,14 @@ export const NavContainer = styled.section`
   position: sticky;
   top: 0;
   z-index: 9;
+
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 386px) {
+    padding: 20px 20px;
+  }
 `;
 
 export const LogoNav = styled.a`

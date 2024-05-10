@@ -11,12 +11,10 @@ export const Categories = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 5px;
+  gap: 10px;
   align-items: center;
   margin: 20px auto 10px auto;
 `;
-
-export const CategoryDiv = styled.div``;
 
 export const CategoryButton = styled.label`
   color: #bdae82;
@@ -63,9 +61,19 @@ export const Gallery = styled.div`
 `;
 
 export const ImageDiv = styled.div`
-  width: 400px;
-  height: 500px;
+  width: 370px;
+  height: 460px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (max-width: 386px) {
+    width: 280px;
+    height: 350px;
+  }
 `;
 
 export const Photo = styled.img`

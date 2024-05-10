@@ -12,6 +12,7 @@ export function Portfolio() {
   return (
     <PortfolioContainer id="portfolio">
       <h2>Portfolio</h2>
+      <hr />
       <Categories>
         {Object.values(PortfolioItem).map((item) => (
           <div key={item}>

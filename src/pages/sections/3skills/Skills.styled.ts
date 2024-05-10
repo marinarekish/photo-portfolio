@@ -43,4 +43,26 @@ export const SkillCard = styled.div`
     height: 60px;
     margin: 0;
   }
+
+  @media (max-width: 768px) {
+    padding: 5px;
+    height: 180px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 386px) {
+    padding: 20px 20px;
+  }
 `;

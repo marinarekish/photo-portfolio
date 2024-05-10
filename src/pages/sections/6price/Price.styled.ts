@@ -43,7 +43,35 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+    padding: 20px 5px;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    ul {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 386px) {
+    width: 300px;
+    padding: 10px 5px;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    ul {
+      margin-bottom: 10px;
+    }
   }
 `;

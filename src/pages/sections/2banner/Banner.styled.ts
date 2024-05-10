@@ -31,11 +31,27 @@ export const BannerContainer = styled.section`
     margin-bottom: 50px;
   }
 
-  ::before {
-    content: "";
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    background-image: linear-gradient(120deg, transparent 40%, black 41% 60%, transparent 61%);
+  @media (max-width: 768px) {
+    background-position: 30% 70%;
+    background-image: linear-gradient(to right, black 0%, transparent 70%), url(${bannerImage});
+  }
+
+  @media (max-width: 464px) {
+    height: 700px;
+    padding: 0 20px;
+    background-position: 35% 65%;
+    background-image: linear-gradient(to right, black 0%, transparent 80%), url(${bannerImage});
+
+    h1 {
+      font-size: 40px;
+      line-height: 60px;
+      width: 200px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      width: 200px;
+    }
   }
 `;
