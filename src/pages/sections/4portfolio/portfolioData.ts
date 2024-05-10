@@ -29,9 +29,6 @@ export const portfolioData = {
     "/img/images/drone/9.jpg",
     "/img/images/drone/10.jpg",
     "/img/images/drone/11.jpg",
-    "/img/images/drone/12.jpg",
-    "/img/images/drone/13.jpg",
-    "/img/images/drone/14.jpg",
   ],
   [PortfolioItem.NATURE]: [
     "/img/images/nature/1.jpg",
@@ -56,9 +53,5 @@ export const portfolioData = {
     "/img/images/portrait/8.jpg",
     "/img/images/portrait/9.jpg",
     "/img/images/portrait/10.jpg",
-    "/img/images/portrait/11.jpg",
-    "/img/images/portrait/12.jpg",
-    "/img/images/portrait/13.jpg",
-    "/img/images/portrait/14.jpg",
   ],
 };

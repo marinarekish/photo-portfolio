@@ -3,19 +3,10 @@ import { ContactContainer, ContactContent } from "./Contacts.styled";
 export function Contacts() {
   return (
     <ContactContainer id="contact">
+      <div className="null"></div>
       <ContactContent>
-        <p>Ready to book your session?</p>
         <h3>Contact me</h3>
-        <form>
-          <input type="text" placeholder="Your name" />
-          <input type="text" placeholder="Your email" />
-          <textarea rows={3} placeholder="Your message" />
-        </form>
-        <button>Send message</button>
-        <h6>
-          Please note that this section is currently not working <br />
-          Stay tuned for our updated contact form!
-        </h6>
+        <div className="elfsight-app-2b7fcbcc-5940-43af-b4b2-6adea9c9d0bd" data-elfsight-app-lazy></div>
       </ContactContent>
     </ContactContainer>
   );

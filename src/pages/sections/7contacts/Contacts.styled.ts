@@ -5,8 +5,10 @@ export const ContactContainer = styled.section`
   background-repeat: no-repeat;
   background-position: 35% 65%;
   background-size: cover;
-  position: relative;
+
   height: 800px;
+
+  display: flex;
 
   @media (max-width: 768px) {
     background-position: 35% 65%;
@@ -15,17 +17,22 @@ export const ContactContainer = styled.section`
   @media (max-width: 386px) {
     background-position: 35% 65%;
   }
+
+  .null {
+    width: 60%;
+    height: 100%;
+  }
 `;
 
 export const ContactContent = styled.div`
-  position: absolute;
-  right: 0;
-  top: 10%;
-  padding: 40px;
+  width: 50%;
+  align-self: flex-end;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  background-color: #242424bf;
+  height: 800px;
 
   h3 {
     color: #bdae82;
