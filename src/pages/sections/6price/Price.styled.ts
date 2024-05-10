@@ -23,8 +23,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  max-width: 400px;
+  width: 310px;
   border: 1px solid #bdae82;
   padding: 30px 10px;
 
@@ -73,5 +72,13 @@ export const Card = styled.div`
     ul {
       margin-bottom: 10px;
     }
+  }
+
+  &:hover {
+    background: #ffffff;
+    opacity: 0.8;
+    color: #242424;
+
+    border: 1px solid #ffffff;
   }
 `;

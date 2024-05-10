@@ -4,7 +4,7 @@ export const PortfolioContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 `;
 
 export const Categories = styled.div`
@@ -20,12 +20,10 @@ export const CategoryButton = styled.label`
   color: #bdae82;
   font-size: 20px;
   line-height: 40px;
-
-  padding: 10px 40px;
   border: 1px solid #bdae82;
-
   text-align: center;
 
+  padding: 10px 40px;
   cursor: pointer;
 
   &:hover {
@@ -56,7 +54,7 @@ export const Gallery = styled.div`
   align-items: center;
   gap: 20px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   padding: 30px;
 `;
 

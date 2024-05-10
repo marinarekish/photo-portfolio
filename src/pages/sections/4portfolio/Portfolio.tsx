@@ -5,8 +5,12 @@ import { PortfolioItem, portfolioData } from "./portfolioData";
 export function Portfolio() {
   const [activeItem, setActiveItem] = useState(PortfolioItem.ARCHITECTURE);
 
+  const [expanded, setExpanded] = useState(false);
+  const photosToShow = expanded ? portfolioData[activeItem] : portfolioData[activeItem].slice(0, 6);
+
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setActiveItem(event.target.value as PortfolioItem);
+    setExpanded(false);
   }
 
   return (
@@ -16,18 +20,26 @@ export function Portfolio() {
       <Categories>
         {Object.values(PortfolioItem).map((item) => (
           <div key={item}>
-            <Input type="radio" id={item} name="category" onChange={handleChange} value={item}></Input>
+            <Input
+              checked={item === activeItem}
+              type="radio"
+              id={item}
+              name="category"
+              onChange={handleChange}
+              value={item}
+            ></Input>
             <CategoryButton htmlFor={item}>{item}</CategoryButton>
           </div>
         ))}
       </Categories>
       <Gallery>
-        {portfolioData[activeItem].map((imgSrc) => (
+        {photosToShow.map((imgSrc) => (
           <ImageDiv key={imgSrc}>
             <Photo src={imgSrc} />
           </ImageDiv>
         ))}
       </Gallery>
+      <button onClick={() => setExpanded(!expanded)}>{expanded ? "Show Less" : "Show More"}</button>
     </PortfolioContainer>
   );
 }
